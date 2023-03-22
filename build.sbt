@@ -6,5 +6,9 @@ lazy val root = (project in file("."))
     name := "hello",
     libraryDependencies ++= Seq(
       "com.xilinx.rapidwright" % "rapidwright" % "2022.2.2"
-    )
+    ),
+    // Settings for scalafix
+    semanticdbEnabled := true,
+    semanticdbVersion := scalafixSemanticdb.revision,
+    scalacOptions += "-Wunused"
   )

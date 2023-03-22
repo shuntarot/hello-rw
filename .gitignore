@@ -1,0 +1,13 @@
+.bloop
+.bsp
+project/metals.sbt
+.vscode
+project/project/
+project/target/
+target/
+*.key
+*.log
+*.swp
+.ivy2
+.idea
+.metals
